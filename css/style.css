@@ -87,16 +87,35 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*===== GLOBAL STYLES =====*/
 
    body {
-    display: grid;
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr 5fr;
-    grid-template-areas:
-    "sidebar header"
-    "sidebar main-content";
     font-family: 'Inter', sans-serif;
+    width: 100%;
+    margin: 0;
    }
+
+
+
+   /*==== HEADER STYLES ====*/
+
+   header {
+    width: 100%;
+    padding-bottom: 10px;
+   }
+
+   .search img {
+    height: 25px;
+   }
+
+   .search input {
+    background: #a78bfa transparent;
+    border: #7c3aed solid 2px;
+   }
+
+   
+
+
 
 /* ==========================================================================
    Helper classes
