@@ -91,15 +91,37 @@ textarea {
 
    body {
     font-family: 'Inter', sans-serif;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15vh 85vh;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
    }
 
+   /*=== SIDEBAR STYLES ===*/
 
+   .sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-color: #a78bfa;
+    color: white;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding: 25px 20px;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
+  .sidebar ul li {
+    line-height: 35px;
+  }
 
    /*==== HEADER STYLES ====*/
 
-   header {
+   .header {
     width: 100%;
     padding-bottom: 10px;
    }
