@@ -120,6 +120,7 @@ textarea {
     display: flex;
     flex-flow: row-reverse nowrap;
     align-items: center;
+    list-style-type: none;
   }
   
   .navigation ul li {
@@ -136,8 +137,21 @@ textarea {
    /*==== HEADER STYLES ====*/
 
    .header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    column-gap: var(--space-2x);
+    row-gap: var(--space-2x);
     width: 100%;
     padding-bottom: 10px;
+    background: white;
+   }
+
+   .search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: var(--space-2x);
    }
 
    .search img {
@@ -147,6 +161,40 @@ textarea {
    .search input {
     background: #a78bfa transparent;
     border: #7c3aed solid 2px;
+   }
+
+   .profile-info img {
+    height: 30px;
+    width: 30px;
+   }
+
+   .profile-info h3 {
+    font-size: 1.5rem;
+   }
+
+   .greeting img {
+    height: 33px;
+    width: 33px;
+   }
+
+   .greeting h4 {
+    font-size: 1.25rem;
+   }
+
+   .greeting h1 {
+    font-size: 2em;
+   }
+
+   .buttons button {
+    background: #5b21b6;
+    border-radius: 33%;
+    color: white;
+   }
+
+   /*=== MAIN STYLES ===*/
+
+   .main-content {
+    background: #ddd6fe;
    }
 
    
