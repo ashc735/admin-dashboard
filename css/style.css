@@ -97,6 +97,7 @@ textarea {
     grid-template-rows: minmax(1fr, 300px) 4fr;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
    }
 
    /*=== SIDEBAR STYLES ===*/
@@ -176,21 +177,24 @@ textarea {
    /*==== HEADER STYLES ====*/
 
    .header {
-    padding: 1.5em 2em;
+    padding: 1rem 4rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1.5fr;
     background-color: white;
-    box-shadow: 0 5px 10px -10px #ede9fe;
-
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 25%;
+    border: black solid 2px;
+    margin-bottom: 20px;
    }
+
 
    .search-wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: var(--space-2x);
-    margin-left: 20px;
    }
 
    .search-wrapper img {
@@ -213,13 +217,12 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 1em;
-
    }
 
    .profile-header img {
     height: 33px;
     width: 33px;
-    padding: 5px 5px;
+    
    }
 
    .profile-header h3 {
@@ -227,7 +230,8 @@ textarea {
    }
 
    .profile-bar {
-    
+    display: flex;
+    flex-flow: column nowrap;
    }
 
    .greeting img {
@@ -243,10 +247,23 @@ textarea {
     font-size: 2em;
    }
 
+   .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+   }
+
    .buttons button {
     background: #5b21b6;
-    border-radius: 33%;
+    border-radius: 33px;
+    border: none;
     color: white;
+    text-align: center;
+    font-size: 1.115rem;
+    height: 50px;
+    width: 100px;
    }
 
    /*=== MAIN STYLES ===*/
