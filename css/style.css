@@ -303,9 +303,8 @@ textarea {
 
    .project-piece {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-
+    justify-content: space-between;
     max-width: 400px;
     padding: 2rem 1.5rem;
     background: white;
@@ -332,6 +331,7 @@ textarea {
     flex-flow: row wrap;
     gap: 1rem;
     justify-content: end;
+    align-items: end;
    }
    
    .interactions img {
@@ -343,7 +343,6 @@ textarea {
 
    .aside {
     display: grid;
-    grid-template: 50% / 50% / 100%;
     align-self: start;
    }
 
@@ -360,6 +359,10 @@ textarea {
 
    .announcement-item {
     margin: 1rem 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1.5rem;
    }
 
    .announcement-item h4 {
@@ -373,14 +376,7 @@ textarea {
    /*=== TRENDING STYLES ===*/
 
    #trending {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-self: start;
-    background: white;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding: 1.5rem;
+    align-self: end;
    }
 
    #trending h2 {
@@ -388,19 +384,25 @@ textarea {
    }
 
    .trending-users {
-
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
    }
 
    .profile {
-
+    font-size: 1.25rem;
    }
 
    .profile em {
-
+    color: #4c1d95;
    }
 
    .profile p {
-    font-size: 0.875rem;
+    font-size: 1rem;
    }
 
 
